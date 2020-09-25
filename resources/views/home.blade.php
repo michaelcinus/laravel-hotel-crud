@@ -1,13 +1,14 @@
 @extends('layouts.main-layout')
 
 @section('content')
+
+
+
     <ul>
         @foreach ($stanze as $item)
 
             <li>
-                {{ $item -> room_number }}
-                {{ $item -> floor }}
-                {{ $item -> beds }}
+                <a href="{{route('stanza-show', $item -> id)}}">{{ $item -> room_number }}</a>
             </li>
         @endforeach
     </ul>
