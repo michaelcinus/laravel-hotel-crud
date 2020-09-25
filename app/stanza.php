@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class stanza extends Model
 {
-    protected $table = 'stanze';
+    protected $table = 'stanza';
     protected $fillable = [
         "room_number" ,
         "floor" ,

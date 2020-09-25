@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <form action="{{route('stanza-create')}}">
+    <form action="{{route('stanza-create')}}" method="POST">
         @csrf
-        @method('post')
+        @method('POST')
         <div class="form-group">
             <label for="room_number">ROOM NUMBER</label>
             <input type="">
@@ -17,6 +17,7 @@
             <label for="beds">BEDS</label>
             <input type="">
         </div>
+        <button type="submit">INSERISCI</button>
     </form>
 
     <ul>
@@ -27,4 +28,5 @@
             </li>
         @endforeach
     </ul>
+
 @endsection
